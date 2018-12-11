@@ -1,0 +1,12 @@
+1. 使用title方法修改字符串的大小写：
+name='add lovelace'
+print(name.title()) #title()以首字母大写的方式显示每个单词。将输出'Add Lovelace'
+print(name.upper()) #全部变成大写
+print(name.lower()) #全部变成小写
+
+2. 使用rstrip()方法删除空白符
+  message='python '
+  message.rstrip='python'#只是暂时的删除；
+  message=message.rstrip #永久删除，删除后重新赋值；
+  strip（）方法删除所有空格，rstrip（）只删除右面的空格，lstrip（）删除左边的空格
+  
