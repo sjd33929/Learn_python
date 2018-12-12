@@ -10,3 +10,10 @@ print(name.lower()) #全部变成小写
   message=message.rstrip #永久删除，删除后重新赋值；
   strip（）方法删除所有空格，rstrip（）只删除右面的空格，lstrip（）删除左边的空格
   
+3. sort()排序：
+  list.sort(): 正向排序
+  list.sort(reverse=True):反向排序
+  sorted(list):不影响原来的列表；
+ 
+4. 
+  
