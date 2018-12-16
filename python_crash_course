@@ -15,5 +15,8 @@ print(name.lower()) #全部变成小写
   list.sort(reverse=True):反向排序
   sorted(list):不影响原来的列表；
  
-4. 
-  
+4. 可以用集合剔除重复项,set()： 
+   for language in set(favourite_language.values()):
+      print(language.title())
+
+
