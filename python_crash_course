@@ -59,10 +59,11 @@ print(name.lower()) #全部变成小写
   1. 游戏的基本主结构：
     import sys #使用sys模块来退出游戏
     import pygame 
+    from settings import Settings
     def run_game(): #初始化游戏并创建一个屏幕对象
     pygame.init() #初始化背景设置
-    screen = pygame.display.set_mode((1200,800))
     pygame.display.set_caption("Alien Invasion)
+    pygame.init() #初始化背景设置
     bg_color = (230,230,230)
 
     while True: #监视键盘和鼠标事件
@@ -72,5 +73,12 @@ print(name.lower()) #全部变成小写
       screen.fill(bg_color)
       pygame.display.flip() #让最近绘制的屏幕可见
     run_game()
- 2.      
+  2. 创建一个settings类的模块：settings.py
+     class Settings():
+        def_int_(self):
+        self.screen_width = 1200
+        self.screen_height = 800
+        self.bg_color = (230,230,230)
+        
+     
   
