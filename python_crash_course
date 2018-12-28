@@ -73,6 +73,7 @@ print(name.lower()) #全部变成小写
 
     while True: #监视键盘和鼠标事件
       gf.check_events()
+      gf.update_screen(ai_settings,screen,ship)
       for event in pygame.event.get():
         if event.type == pygame.QUIT:
           sys.exit()
@@ -103,6 +104,10 @@ print(name.lower()) #全部变成小写
      import sys
      import pygame
      def check_events(): #响应按键和鼠标事件
+        def update_screen(ai_settings,screen,ship):
+        screen.fill(ai_settings.bg_color)
+        screen.blitme() #根据rect指定的位置将图像绘制在屏幕上
+        pygame.display.flip()
         for event in pygame.event.get():
           if event.type == pygame.QUIT:
             sys.exit()
