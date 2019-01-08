@@ -145,8 +145,11 @@ print(name.lower()) #全部变成小写
             sys.exit()
      
      
-      
-      
+ 8. matplotlib>
+    安装： pip3 install --user matplotlib
+      xlabel, ylabel, fontsize, axis（设置坐标轴的范围）
+      plt.plot(input_values,squares,linewidth=5) #同时提供输入值和输出值，并设置线宽。
+    Scatter() #绘制散点图
         
      
   
