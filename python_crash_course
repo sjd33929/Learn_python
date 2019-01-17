@@ -151,5 +151,14 @@ print(name.lower()) #全部变成小写
       plt.plot(input_values,squares,linewidth=5) #同时提供输入值和输出值，并设置线宽。
     Scatter() #绘制散点图
         
-     
+9. Pygal 可视化仓库： 
+      chart = pygal.Bar(my_config,style = my_style) #创建bar实例
+
+10. Django: 
+    1). 安装虚拟环境： 新建目录： learning-blog$ python -m venv 11_venv 或者直接安装虚拟环境： pip3 install --user virtualenv
+    2). 激活虚拟环境： learning-blog$ source 11_env/bin/activate
+    3). (11_env)learning-blog$ pip3 install Django == 1.11  #Django 仅在虚拟环境激活状态下可用
+    4). (11_env)learning-blog$ django-admin.py startproject learning_log . #创建项目
+    5). 创建数据库：python manage.py migrate #回创建SQLite数据库文件
+    6). startapp appname 是让Django简历创建应用程序所需的基础设施
   
