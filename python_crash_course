@@ -161,4 +161,5 @@ print(name.lower()) #全部变成小写
     4). (11_env)learning-blog$ django-admin.py startproject learning_log . #创建项目
     5). 创建数据库：python manage.py migrate #回创建SQLite数据库文件
     6). startapp appname 是让Django简历创建应用程序所需的基础设施
+    7). 修改项目的数据时的三个步骤：修改model.py; 调用makemigrations； 让Django迁移项目。 
   
